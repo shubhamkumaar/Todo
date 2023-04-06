@@ -1,13 +1,13 @@
 // jshint esversion:6
 
-// const Parse = require("parse/node");
+const Parse = require("parse/node");
 const express = require("express");
 const bodyParser = require("body-parser");
 const date = require(__dirname + "/date.js");
 
 //
-// Parse.initialize("jJjVTHQQMefRUu5FyWus14gUcl3JCDkb76wAC8bW","AbRFT8VNmpZD2cNYcoZPHOGTWm01h1tYaMH3nzyk");
-// Parse.serverURL = 'https://parseapi.back4app.com/'
+Parse.initialize("jJjVTHQQMefRUu5FyWus14gUcl3JCDkb76wAC8bW","AbRFT8VNmpZD2cNYcoZPHOGTWm01h1tYaMH3nzyk");
+Parse.serverURL = 'https://parseapi.back4app.com/'
 
 const app = express();
 const inputs = ["Buy Food", "Cook Food", "Eat Food"];
